@@ -42,8 +42,10 @@ export function add_list(match_list_alias: any[], match_list_var: any[]) {
 	}
 	//match_list_alias =[];
 	//match_list_var = [];
-	const regex_a = /\/\/ ALIAS: (\w+) (\w+)/g;
-	const regex_1 = /\/\/ ALIAS: (\w+) (\w+)/;
+	//const regex_a = /\/\/ ALIAS: (\w+) (\w+)/g;
+	//const regex_1 = /\/\/ ALIAS: (\w+) (\w+)/;
+	let regex_a = /\/\/ ALIAS:\s*(\w+)\s* \s*([^;]*);?/g;
+	let regex_1 = /\/\/ ALIAS:\s*(\w+)\s* \s*([^;]*);?/;
 	// 读取文档内所有行
 	if (vscode.window.activeTextEditor) {
 		const lines = vscode.window.activeTextEditor.document.getText().split('\n');
