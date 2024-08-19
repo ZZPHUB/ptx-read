@@ -104,7 +104,7 @@ export function activate(context: vscode.ExtensionContext) {
 					//判断选中的变量是否是匹配项
 					//console.log(line.text.substring(position.character - match_list_var[i].length, position.character));
 					//if (match_list_var[i] === line.text.substring(position.character - match_list_var[i].length, position.character)) 
-					if (isequal(match_list_var[i], line, position)) {
+					if (match_list_var[i] === getvar(line,position)) {
 						bflag = 1;
 						return new vscode.Hover(`${match_list_var[i]} --> ${match_list_alias[i]}`);
 					}
