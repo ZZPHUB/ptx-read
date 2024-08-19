@@ -2,6 +2,8 @@
   "name": "ptx-reg",
   "displayName": "ptx-reg",
   "description": "read ptc code",
+  "author": "ZhangZhiPeng",
+  "publisher": "ZhangZhiPeng",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.92.0"
